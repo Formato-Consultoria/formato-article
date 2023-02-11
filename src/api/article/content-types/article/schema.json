@@ -52,7 +52,8 @@
         "shared.quote",
         "shared.rich-text",
         "shared.slider"
-      ]
+      ],
+      "required": true
     }
   }
 }
