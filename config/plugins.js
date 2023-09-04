@@ -1,4 +1,5 @@
-module.exports = ({ env }) => ({
+module.exports = ({ env }) => (
+  {
     upload: {
       config: {
         provider: 'cloudinary',
@@ -10,9 +11,16 @@ module.exports = ({ env }) => ({
         actionOptions: {
           upload: {
             folder: env('CLOUDINARY_FOLDER_ARTICLES'),
+            asset_folder: env('CLOUDINARY_FOLDER_ARTICLES'),
           },
-          uploadStream: {},
-          delete: {},
+          uploadStream: {
+            folder: env('CLOUDINARY_FOLDER_ARTICLES'),
+            asset_folder: env('CLOUDINARY_FOLDER_ARTICLES'),
+          },
+          delete: {
+            folder: env('CLOUDINARY_FOLDER_ARTICLES'),
+            asset_folder: env('CLOUDINARY_FOLDER_ARTICLES'),
+          },
         },
       },
     },
@@ -31,5 +39,6 @@ module.exports = ({ env }) => ({
           },
         },
       },
-  },
-});
+    }
+  }
+);

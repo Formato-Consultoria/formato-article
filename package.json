@@ -1,14 +1,16 @@
 {
   "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-graphql": "^4.0.5",
-    "@strapi/plugin-i18n": "4.6.2",
-    "@strapi/plugin-users-permissions": "4.6.2",
-    "@strapi/provider-upload-cloudinary": "^4.6.2",
-    "@strapi/strapi": "4.6.2",
+    "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/plugin-users-permissions": "4.12.5",
+    "@strapi/provider-upload-cloudinary": "^4.12.6",
+    "@strapi/strapi": "4.12.5",
     "better-sqlite3": "8.0.1",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
+    "pg": "^8.11.3",
     "strapi-plugin-populate-deep": "^2.0.0",
     "strapi-plugin-slugify": "^2.3.2"
   },
@@ -22,7 +24,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "author": {
     "name": "Diego C. Silva"
   },

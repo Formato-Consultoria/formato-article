@@ -49,7 +49,22 @@
       "inversedBy": "articles"
     },
     "body": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.media",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider",
+        "shared.seo"
+      ]
     }
   }
 }

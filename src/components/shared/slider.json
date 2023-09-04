@@ -2,7 +2,7 @@
   "collectionName": "components_shared_sliders",
   "info": {
     "displayName": "Slider",
-    "icon": "address-book",
+    "icon": "landscape",
     "description": ""
   },
   "options": {},
@@ -12,7 +12,8 @@
       "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "videos"
       ]
     }
   }
