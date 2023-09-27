@@ -24,6 +24,18 @@ module.exports = ({ env }) => (
         },
       },
     },
+    email: {
+      config: {
+        provider: 'sendgrid',
+        providerOptions: {
+          apiKey: env('SENDGRID_API_KEY'),
+        },
+        settings: {
+          defaultFrom: env('SENDGRID_EMAIL_FROM'),
+          defaultReplyTo: env('SENDGRID_EMAIL_TO'),
+        },
+      },
+    },
     'strapi-plugin-populate-deep': {
       config: {
         defaultDepth: 3,
@@ -39,6 +51,25 @@ module.exports = ({ env }) => (
           },
         },
       },
-    }
+    },
+    // comments: {
+    //   enabled: true,
+    //   config: {
+    //     badWords: false,
+    //     moderatorRoles: ["Authenticated"],
+    //     approvalFlow: ["api::article.article"],
+    //     entryLabel: {
+    //       "*": ["Title", "title", "Name", "name", "Subject", "subject"],
+    //       "api::article.article": ["MyField"],
+    //     },
+    //     blockedAuthorProps: ["name", "email"],
+    //     reportReasons: {
+    //       MY_CUSTOM_REASON: "MY_CUSTOM_REASON",
+    //     },
+    //     gql: {
+    //       // ...
+    //     },
+    //   },
+    // },
   }
 );

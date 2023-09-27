@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_mediums",
+  "info": {
+    "displayName": "Medium",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "https:\\/\\/medium\\.com\\/@[\\w.-]+"
+    }
+  }
+}

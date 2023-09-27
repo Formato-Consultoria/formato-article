@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_you_tubes",
+  "info": {
+    "displayName": "YouTube",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "ChannelLink": {
+      "type": "string",
+      "regex": "https:\\/\\/(?:www\\.)?youtube\\.com\\/(?:channel\\/|@)[A-Za-z0-9_-]+"
+    }
+  }
+}

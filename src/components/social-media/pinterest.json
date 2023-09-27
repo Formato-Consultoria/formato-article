@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_pinterests",
+  "info": {
+    "displayName": "Pinterest",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "https:\\/\\/[A-Za-z.]+pinterest\\.com\\/[A-Za-z0-9_-]+"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_social_media_whatsapps",
+  "info": {
+    "displayName": "Whatsapp",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "biginteger"
+    }
+  }
+}

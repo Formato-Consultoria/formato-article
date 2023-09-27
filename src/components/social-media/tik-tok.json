@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_tik_toks",
+  "info": {
+    "displayName": "TikTok",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "https:\\/\\/www\\.tiktok\\.com\\/@[\\w.-]+"
+    }
+  }
+}

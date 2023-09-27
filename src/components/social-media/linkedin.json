@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_social_media_linkedins",
+  "info": {
+    "displayName": "Linkedin",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "^(https?://)?(www\\\\.)?linkedin\\\\.com/in/[A-Za-z0-9-]+/?$"
+    }
+  }
+}

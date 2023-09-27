@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_social_media_twitters",
+  "info": {
+    "displayName": "Twitter",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "ProfileLink": {
+      "type": "string",
+      "regex": "https:\\/\\/twitter\\.com\\/[A-Za-z0-9_]+"
+    }
+  }
+}

@@ -34,6 +34,41 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
+    },
+    "Instagram": {
+      "type": "string",
+      "regex": "^@([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)$"
+    },
+    "Discord": {
+      "type": "string",
+      "regex": "^[A-Za-z0-9_]+#[0-9]{4}$"
+    },
+    "Medium": {
+      "type": "string",
+      "regex": "https:\\/\\/medium\\.com\\/@[\\w.-]+"
+    },
+    "Pinterest": {
+      "type": "string",
+      "regex": "https:\\/\\/[A-Za-z.]+pinterest\\.com\\/[A-Za-z0-9_-]+"
+    },
+    "Snapchat": {
+      "type": "string",
+      "regex": "https:\\/\\/www\\.snapchat\\.com\\/add\\/[A-Za-z0-9_-]+"
+    },
+    "TikTok": {
+      "type": "string",
+      "regex": "https:\\/\\/www\\.tiktok\\.com\\/@[\\w.-]+"
+    },
+    "Twitter": {
+      "type": "string",
+      "regex": "https:\\/\\/twitter\\.com\\/[A-Za-z0-9_]+"
+    },
+    "YouTube": {
+      "type": "string",
+      "regex": "https:\\/\\/(?:www\\.)?youtube\\.com\\/(?:channel\\/|@)[A-Za-z0-9_-]+"
+    },
+    "Whatsapp": {
+      "type": "biginteger"
     }
   }
 }

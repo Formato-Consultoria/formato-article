@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_social_media_instagrams",
+  "info": {
+    "displayName": "Instagram",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "regex": "^@([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)$",
+      "required": true,
+      "unique": true
+    }
+  }
+}
