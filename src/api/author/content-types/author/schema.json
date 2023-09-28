@@ -37,7 +37,8 @@
     },
     "Instagram": {
       "type": "string",
-      "regex": "^@([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)$"
+      "regex": "^@([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)$",
+      "default": "@user_name"
     },
     "Discord": {
       "type": "string",
