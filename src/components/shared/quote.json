@@ -7,11 +7,9 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "body": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }
