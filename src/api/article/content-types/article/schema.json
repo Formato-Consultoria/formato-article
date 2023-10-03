@@ -52,7 +52,7 @@
       "type": "customField",
       "options": {
         "output": "Markdown",
-        "preset": "standard"
+        "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
     },

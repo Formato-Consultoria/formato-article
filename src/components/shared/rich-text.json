@@ -11,7 +11,7 @@
       "type": "customField",
       "options": {
         "output": "Markdown",
-        "preset": "light"
+        "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
     }
