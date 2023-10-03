@@ -41,6 +41,9 @@ module.exports = ({ env }) => (
         defaultDepth: 3,
       }
     },
+    'video-field': {
+      enabled: true
+    },
     slugify: {
       enabled: true,
       config: {

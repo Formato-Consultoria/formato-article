@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
+    "@sklinet/strapi-plugin-video-field": "^1.0.5",
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.12.5",
     "@strapi/plugin-users-permissions": "4.12.5",
@@ -14,6 +15,7 @@
     "pg": "^8.11.3",
     "strapi-plugin-comments": "^2.2.15",
     "strapi-plugin-heroicons-field": "^0.0.4",
+    "strapi-plugin-multi-select": "^1.2.2",
     "strapi-plugin-populate-deep": "^2.0.0",
     "strapi-plugin-slugify": "^2.3.2"
   },
