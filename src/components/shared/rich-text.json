@@ -10,7 +10,7 @@
     "body": {
       "type": "customField",
       "options": {
-        "output": "Markdown",
+        "output": "HTML",
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"

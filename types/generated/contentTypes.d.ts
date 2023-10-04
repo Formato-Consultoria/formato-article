@@ -896,7 +896,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       Attribute.CustomField<
         'plugin::ckeditor.CKEditor',
         {
-          output: 'Markdown';
+          output: 'HTML';
           preset: 'rich';
         }
       >;
