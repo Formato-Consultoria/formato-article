@@ -31,9 +31,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ]
     },
     "author": {
@@ -69,7 +67,7 @@
     "Tags": {
       "type": "customField",
       "customField": "plugin::multi-select.multi-select",
-      "required": true,
+      "required": false,
       "options": [
         "Notícias",
         "Atualidades",
