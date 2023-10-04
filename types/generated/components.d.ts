@@ -36,7 +36,7 @@ export interface SharedRichText extends Schema.Component {
       Attribute.CustomField<
         'plugin::ckeditor.CKEditor',
         {
-          output: 'HTML';
+          output: 'Markdown';
           preset: 'rich';
         }
       >;
