@@ -13,6 +13,7 @@
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
     "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
@@ -27,7 +28,7 @@
   "name": "api-blog",
   "private": true,
   "version": "0.1.0",
-  "description": "Painel de gerenciamento de artigos da Formato Consultoria",
+  "description": "Painel de gerenciamento de conteúdo do website da Formato Consultoria",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",

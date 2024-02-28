@@ -1698,6 +1698,7 @@ export interface ApiDynamicPageDynamicPage extends Schema.CollectionType {
           preset: 'rich';
         }
       >;
+    cover: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
