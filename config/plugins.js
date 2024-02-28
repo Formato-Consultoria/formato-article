@@ -55,9 +55,18 @@ module.exports = ({ env }) => (
           category: {
             field: 'slug',
             references: 'name'
+          },
+          service: {
+            field: 'slug',
+            references: 'title'
+          },
+          'dynamic-page': {
+            field: 'slug',
+            references: 'title'
           }
         },
       },
     },
+    "react-icons": true,
   }
 );

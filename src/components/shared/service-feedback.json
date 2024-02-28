@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_service_feedbacks",
+  "info": {
+    "displayName": "Feedback",
+    "icon": "discuss",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "comment": {
+      "type": "text",
+      "required": true,
+      "minLength": 150
+    }
+  }
+}

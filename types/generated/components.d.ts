@@ -1,5 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface SharedFaq extends Schema.Component {
+  collectionName: 'components_shared_faqs';
+  info: {
+    displayName: 'FAQ';
+    icon: 'discuss';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    content: Attribute.Text & Attribute.Required;
+  };
+}
+
 export interface SharedMedia extends Schema.Component {
   collectionName: 'components_shared_media';
   info: {
@@ -43,18 +55,22 @@ export interface SharedRichText extends Schema.Component {
   };
 }
 
-export interface SharedSeo extends Schema.Component {
-  collectionName: 'components_shared_seos';
+export interface SharedServiceFeedback extends Schema.Component {
+  collectionName: 'components_shared_service_feedbacks';
   info: {
-    name: 'Seo';
-    icon: 'search';
-    displayName: 'Seo';
+    displayName: 'Feedback';
+    icon: 'discuss';
     description: '';
   };
   attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-    shareImage: Attribute.Media;
+    name: Attribute.String & Attribute.Required;
+    avatar: Attribute.Media;
+    email: Attribute.Email;
+    comment: Attribute.Text &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        minLength: 150;
+      }>;
   };
 }
 
@@ -197,10 +213,11 @@ export interface SocialMediaYouTube extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'shared.faq': SharedFaq;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
-      'shared.seo': SharedSeo;
+      'shared.service-feedback': SharedServiceFeedback;
       'shared.slider': SharedSlider;
       'shared.video': SharedVideo;
       'social-media.discord': SocialMediaDiscord;

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "servicos",
+  "info": {
+    "singularName": "servico",
+    "pluralName": "servicos",
+    "displayName": "Pagina de Serviço",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "FAQ": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.faq"
+      ]
+    }
+  }
+}

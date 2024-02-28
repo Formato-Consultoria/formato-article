@@ -4,7 +4,7 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "Sobre",
+    "displayName": "Pagina Sobre Nós",
     "description": "Write about yourself and the content you create"
   },
   "options": {
@@ -19,8 +19,33 @@
       "type": "dynamiczone",
       "components": [
         "shared.media",
-        "shared.rich-text"
+        "shared.rich-text",
+        "shared.quote",
+        "shared.slider",
+        "shared.video",
+        "shared.service-feedback"
       ]
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "body": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
